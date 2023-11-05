@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.img{
+    display: block;
+    max-width: 50%;
+}
+p,h1,h2{
+    overflow-wrap: break-word;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(167, 252, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 600px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-inline: 1rem;
+    background-color: rgb(241, 233, 111);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.image{
+    max-width: 500%;
+    width: 50%;
+}
+.image img{
+    max-width: 50%;
+    display: block;
+    object-fit: fill;
+}
+.summary{
+    display: grid;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    
+}
+.summary h1{
+    font-size: 0.7rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(26, 25, 25, 0.7);
+    letter-spacing: 0.5rem;
+}
+.summary h2{
+    font-family: "Fraunces";
+    font-weight: 900;
+    padding-right: 1rem;
+}
+.summary p{
+    font-size: 0.9rem;
+    color: rgba(26, 25, 25, 0.6);
+    font-weight: 500;
+    padding-right: 4rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cost .offer {
+    font-size: 1.5rem;
+    font-family: "Fraunces";
+    color: #3d8168;
+    font-weight: 900;
+}
+.cost del{
+    font-size: 0.7rem;
+    color: rgba(100, 89, 89, 0.7);
+}
+button{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #afddcc;
+    color: rgb(24, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #103124;
+}
+
+@media (max-width:600px) {
+    .container{
+        grid-template-columns: 1fr;
+        place-items: center;
+        border-radius: 1rem;
+    }
+    .summary{
+        gap: 1rem;
+    }
+}
